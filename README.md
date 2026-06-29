@@ -44,39 +44,7 @@ Matplotlib
 OpenCV
 PIL
 Joblib
-Repository structure
-chest-xray-lesion-classification/
-│
-├── README.md
-├── requirements.txt
-├── .gitignore
-│
-├── notebooks/
-│   ├── 01_random_forest_pca.ipynb
-│   ├── 02_custom_cnn.ipynb
-│   ├── 03_resnet50_transfer_learning.ipynb
-│   ├── 04_autoencoder_random_forest.ipynb
-│   ├── 05_cnn_random_forest_hybrid.ipynb
-│   └── 06_cnn_two_datasets.ipynb
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── metrics.py
-│   ├── gradcam.py
-│   └── utils.py
-│
-├── results/
-│   ├── classification_reports/
-│   ├── confusion_matrices/
-│   └── training_curves/
-│
-├── models/
-│   └── README.md
-│
-└── app/
-    └── demo_app.py
 
-The structure may vary depending on the final organization of the notebooks and scripts, but this layout is recommended to keep the project clear and easy to maintain.
 
 Datasets
 
@@ -129,29 +97,6 @@ Grad-CAM was used to generate visual activation maps for convolutional models. T
 
 This interpretability step is useful to better understand the behaviour of the model, although it does not replace clinical validation or expert medical interpretation.
 
-Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/chest-xray-lesion-classification.git
-cd chest-xray-lesion-classification
-
-Create a virtual environment:
-
-python -m venv venv
-
-Activate the environment:
-
-# macOS / Linux
-source venv/bin/activate
-# Windows
-venv\Scripts\activate
-
-Install the required dependencies:
-
-pip install -r requirements.txt
-Running the notebooks
-
 The notebooks can be executed locally or in Google Colab.
 
 To run them in Google Colab:
@@ -161,26 +106,6 @@ Upload the selected notebook.
 Mount Google Drive if the datasets are stored there.
 Update the dataset paths.
 Execute the cells in order.
-
-Example dataset path used in Colab:
-
-from google.colab import drive
-drive.mount('/content/drive')
-Requirements
-
-A possible requirements.txt file may include:
-
-tensorflow
-keras
-scikit-learn
-numpy
-pandas
-matplotlib
-opencv-python
-pillow
-joblib
-
-Depending on the final notebooks, additional libraries may be required.
 
 Disclaimer
 
